@@ -2,11 +2,7 @@
 
 use Kirby\Cms\App;
 
-if (!class_exists('SylvainJule\ColorPalette')) {
-  require_once __DIR__ . '/lib/color-palette.php';
-}
-
-require_once __DIR__ . '/vendor/autoload.php';
+@include_once __DIR__ . '/vendor/autoload.php';
 
 App::plugin('sylvainjule/color-palette', [
   'options' => [

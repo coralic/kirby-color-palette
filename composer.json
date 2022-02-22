@@ -2,38 +2,33 @@
   "name": "coralic/kirby-color-palette",
   "description": "A color palette to pick colors from for Kirby",
   "type": "kirby-plugin",
-  "version": "2.0.1-beta",
+  "version": "2.0.2-beta",
   "license": "MIT",
   "authors": [
-    {
-      "name": "Sylvain Julé",
-      "email": "contact@sylvain-jule.fr"
-    },
     {
       "name": "Tobias Möritz",
       "email": "tobias@moeritz.io",
       "homepage": "https://moeritz.io"
+    },
+    {
+      "name": "Sylvain Julé",
+      "email": "contact@sylvain-jule.fr"
     }
   ],
   "require": {
     "getkirby/composer-installer": "^1.1",
-    "ksubileau/color-thief-php": "2.0.x-dev"
+    "ksubileau/color-thief-php": "dev-master"
   },
-  "require-dev": {
-    "getkirby/cms": "^3.6"
-  },
-  "scripts": {
-    "dist": "composer install --no-dev --optimize-autoloader"
+  "autoload": {
+    "psr-4": {
+      "SylvainJule\\ColorPalette\\": "lib/"
+    }
   },
   "config": {
     "optimize-autoloader": true,
     "allow-plugins": {
       "getkirby/composer-installer": true
     }
-  },
-  "extra": {
-    "kirby-cms-path": false,
-    "installer-name": "kirby-color-palette"
   },
   "minimum-stability": "dev"
 }

@@ -2,7 +2,6 @@
 
 use Kirby\Cms\FilePicker;
 use Kirby\Data\Yaml;
-use Kirby\Form\Options;
 use SylvainJule\ColorPalette;
 
 return [
