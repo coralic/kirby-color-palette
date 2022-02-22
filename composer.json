@@ -1,19 +1,39 @@
 {
-    "name": "sylvainjule/color-palette",
-    "description": "A color palette to pick colors from for Kirby",
-    "type": "kirby-plugin",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Sylvain Julé",
-            "email": "contact@sylvain-jule.fr"
-        }
-    ],
-    "require": {
-        "getkirby/composer-installer": "^1.1"
+  "name": "coralic/color-palette",
+  "description": "A color palette to pick colors from for Kirby",
+  "type": "kirby-plugin",
+  "version": "2.0.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sylvain Julé",
+      "email": "contact@sylvain-jule.fr"
     },
-    "extra": {
-        "installer-name": "color-palette"
-    },
-    "minimum-stability": "beta"
+    {
+      "name": "Tobias Möritz",
+      "email": "tobias@moeritz.io",
+      "homepage": "https://moeritz.io"
+    }
+  ],
+  "require": {
+    "getkirby/composer-installer": "^1.1",
+    "ksubileau/color-thief-php": "2.0.x-dev"
+  },
+  "require-dev": {
+    "getkirby/cms": "^3.6"
+  },
+  "scripts": {
+    "dist": "composer install --no-dev --optimize-autoloader"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
+  },
+  "extra": {
+    "kirby-cms-path": false,
+    "installer-name": "kirby-color-palette"
+  },
+  "minimum-stability": "dev"
 }

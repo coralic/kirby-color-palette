@@ -1,25 +1,16 @@
 {
   "name": "kirby-color-palette",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "description": "A color palette to pick colors from for Kirby",
   "main": "index.js",
   "author": "Sylvain Julé",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel watch src/index.js --no-source-maps -d ./",
-    "build": "parcel build src/index.js --no-source-maps --experimental-scope-hoisting -d ./"
-  },
-  "posthtml": {
-    "recognizeSelfClosing": true
+    "dev": "kirbyup src/index.js --watch",
+    "build": "kirbyup src/index.js"
   },
   "devDependencies": {
-    "@vue/component-compiler-utils": "^3.2.0",
-    "cssnano": "^4.1.10",
-    "sass": "^1.30.0",
-    "vue-template-compiler": "^2.6.12"
-  },
-  "dependencies": {
-    "vue": "^2.6.11",
-    "vue-hot-reload-api": "^2.3.4"
+    "kirbyup": "^0.22.2",
+    "prettier": "^2.5.1"
   }
 }
