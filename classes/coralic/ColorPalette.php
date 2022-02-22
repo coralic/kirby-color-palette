@@ -1,6 +1,6 @@
 <?php
 
-namespace SylvainJule;
+namespace coralic;
 
 use ColorThief\ColorThief;
 use InvalidArgumentException;

@@ -2,7 +2,7 @@
 
 use Kirby\Cms\FilePicker;
 use Kirby\Data\Yaml;
-use SylvainJule\ColorPalette;
+use coralic\ColorPalette;
 
 return [
   'color-palette' => [

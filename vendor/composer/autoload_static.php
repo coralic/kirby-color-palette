@@ -7,9 +7,9 @@ namespace Composer\Autoload;
 class ComposerStaticInit7e97c26318a1047d440a5b4a3b74e0c4
 {
     public static $prefixLengthsPsr4 = array (
-        'S' => 
+        'c' => 
         array (
-            'SylvainJule\\ColorPalette\\' => 25,
+            'coralic\\' => 8,
         ),
         'K' => 
         array (
@@ -22,9 +22,9 @@ class ComposerStaticInit7e97c26318a1047d440a5b4a3b74e0c4
     );
 
     public static $prefixDirsPsr4 = array (
-        'SylvainJule\\ColorPalette\\' => 
+        'coralic\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/lib',
+            0 => __DIR__ . '/../..' . '/classes/coralic',
         ),
         'Kirby\\' => 
         array (
@@ -52,6 +52,7 @@ class ComposerStaticInit7e97c26318a1047d440a5b4a3b74e0c4
         'Kirby\\ComposerInstaller\\Installer' => __DIR__ . '/..' . '/getkirby/composer-installer/src/ComposerInstaller/Installer.php',
         'Kirby\\ComposerInstaller\\Plugin' => __DIR__ . '/..' . '/getkirby/composer-installer/src/ComposerInstaller/Plugin.php',
         'Kirby\\ComposerInstaller\\PluginInstaller' => __DIR__ . '/..' . '/getkirby/composer-installer/src/ComposerInstaller/PluginInstaller.php',
+        'coralic\\ColorPalette' => __DIR__ . '/../..' . '/classes/coralic/ColorPalette.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

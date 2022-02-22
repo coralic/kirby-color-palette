@@ -6,7 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'SylvainJule\\ColorPalette\\' => array($baseDir . '/lib'),
+    'coralic\\' => array($baseDir . '/classes/coralic'),
     'Kirby\\' => array($vendorDir . '/getkirby/composer-installer/src'),
     'ColorThief\\' => array($vendorDir . '/ksubileau/color-thief-php/lib/ColorThief'),
 );

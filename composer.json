@@ -2,7 +2,7 @@
   "name": "coralic/kirby-color-palette",
   "description": "A color palette to pick colors from for Kirby",
   "type": "kirby-plugin",
-  "version": "2.0.2-beta",
+  "version": "2.0.3-beta",
   "license": "MIT",
   "authors": [
     {
@@ -21,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "SylvainJule\\ColorPalette\\": "lib/"
+      "coralic\\": "classes/coralic"
     }
   },
   "config": {
